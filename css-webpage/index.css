@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-size: 50%;
+  background-repeat: no-repeat;
+  margin: 0;
+
+}
+h1 {
+  color: #99ff66;
+}
+p {
+  color: red;
+}
+.btn{
+  background-color: #99ff6600;
+  padding-left: 23px;
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px 15px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 26px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
