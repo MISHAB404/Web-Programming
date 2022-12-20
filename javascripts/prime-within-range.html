@@ -1,0 +1,25 @@
+<html>
+<body>
+<center>
+<h3>
+<font color="red">Prime Numbers within a range</font></h3>
+<input type="button" value="click here to start" onclick="prime()">
+</center>
+<script>
+function prime(){
+var n1=prompt("Enter the lower limit");
+var n2=prompt("Enter the upper limit");
+document.write("Prime number with in range "+n1+" and "+n2+" are:<br>")
+for(i=n1;i<n2;i++){
+var flag=true;
+for(j=2;j<i;j++){
+if(i%j==0){
+flag=false;
+break;
+}}
+if(i>1 && flag==true){
+document.write("<br>"+i+"<br>");
+}}}
+</script>
+</body>
+</html>

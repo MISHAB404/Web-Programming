@@ -1,0 +1,34 @@
+<html>
+<style>
+.btn{
+background-color:darkgreen;
+color:white;
+padding: 10px 10px 10px 10px;
+border-radius:5px;
+border:0;
+}
+</style>
+<body>
+<center>
+<br><br>
+<button class="btn" onclick="myFunction()">Find Square-Root</button>
+<br>
+<h1><span id="this"></span></h1>
+<font color="darkgreen"><h1 id="that"></h1></font>
+</center>
+
+
+
+
+<script>
+function myFunction() {
+  let num = prompt("Enter a number : ");
+    document.getElementById("this").innerHTML = "You Entered : " + num;
+    document.getElementById("that").innerHTML = "The Square Root of "+num+" is "+Math.sqrt(num);
+  if (num != null) {
+    document.getElementById("demo").innerHTML = alert("The Square Root of "+num+" is "+Math.sqrt(num));
+  }
+}
+</script>
+</body>
+</html>

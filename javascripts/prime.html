@@ -1,0 +1,25 @@
+<html>
+<body>
+<center><h3><font color="darkgreen">Prime or Not</font></h3>
+<input type="button" value="Click to start" onclick="prime()">
+</center>
+<script>
+function prime(){
+let n=prompt("Enter a number: ");
+let flag=true;
+for(i=2;i<n-1;i++){
+if (n%i==0) {
+flag = false;
+break;}}
+if(n==1||n==0){
+alert("1 is neither Prime nor Composite")
+}
+else if(flag==false){
+alert(n+" is not Prime")}
+else{
+alert(n+" is Prime")}
+}
+
+</script>
+</body>
+</html>

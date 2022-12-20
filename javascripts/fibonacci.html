@@ -1,0 +1,28 @@
+<html>
+<body>
+<center>
+<h4><font color="darkgreen">FIBONACCI</font></h4>
+<input type="button" value="Click to start" onclick="fibo()">
+<center>
+<script>
+function fibo(){
+let n=prompt("Enter a limit: ");
+let first=0;
+let second=1;
+let i=2;
+let fib=0;
+if(n!=0){
+document.write(first+"<br>");
+document.write(second+"<br>");
+while(i<n){
+i=i+fib;
+fib=first+second;
+first=second;
+second=fib;
+document.write(fib+"<br>")
+}}}
+
+
+</script>
+</body>
+</html>
