@@ -1,0 +1,92 @@
+<html>
+<head><title>Register Form</title></head>
+    <style>
+        .card{
+            width: 600px;
+            height: 550px;
+            padding: 15px;
+            margin-top: 50px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.322);
+            text-align: center;
+            border-radius: 9px;
+        }
+        input{
+            padding: 10px 300px 10px 10px ;
+            margin-bottom: 20px;
+        }
+        button{
+            background-color: rgb(54, 116, 230);
+            color: white;
+            width: 480px;
+            height: 40px;
+            border: 0;
+            border-radius: 5px;
+        }
+    </style>
+<body>
+    <center>
+    <div class="card">
+        <h1>Register Form</h1>
+<h4 style="color:red;" id="error"></h4>
+    <form id="regform" action="/form_validation.html" method="post" onsubmit="return validateForm()">
+        <input type="text" id="fname" name="fname" placeholder="First Name">
+        <input type="text" id="lname" name="lname" placeholder="Last Name">
+        <input type="number" id="number" name="number" placeholder="+91">
+        <input type="email" id="email" name="email" placeholder="Your Email">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password">
+        <br>
+        <button type="submit" id="submit">Register Now</button>
+    </form>
+
+    </div>
+</center>
+<script>
+    function validateForm(){
+    var fname=document.getElementById("fname").value;
+    var lname=document.getElementById("lname").value;
+    var number=document.getElementById("number").value;
+    var email=document.getElementById("email").value;
+    var password=document.getElementById("password").value;
+    var cpassword=document.getElementById("cpassword").value;
+    if (fname==""){
+        document.getElementById("error").innerHTML = 'Enter First Name';
+        return false;
+     }
+    if (lname=="") {
+ 	document.getElementById("error").innerHTML = 'Enter Last Name';
+        return false;
+}
+    if (number=="") {
+	document.getElementById("error").innerHTML = 'Enter Number';
+        return false;
+}
+    if (email=="") {
+	document.getElementById("error").innerHTML = 'Enter Email';
+        return false;
+}
+    if (password=="") {
+	document.getElementById("error").innerHTML = 'Enter a Password';
+        return false;
+}
+  if (cpassword=="") {
+	document.getElementById("error").innerHTML = 'Enter a Confirm Password';
+        return false;
+}
+
+    if (cpassword !=password) {
+        document.getElementById("error").innerHTML = 'Password Not Match';
+        return false;
+}
+if(submit){
+document.write("Hi welcome ",document.getElementById("fname").value);
+}
+
+    }
+    </script>
+</body>
+</html>
+
+
+
