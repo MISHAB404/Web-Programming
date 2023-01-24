@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="white"><h2 align="center"><font color="red">STRING AND MATH FUNCTIONS</font></h2>
+
+<script>
+let s=prompt("Enter first string: ");
+let t=prompt("Enter second string: ");
+let x=prompt("Enter a number: ");
+if(s=='' || t=='' || s==null || t==null){
+alert("Refresh the page again and write any input on prompt");
+location.reload();
+}else{
+
+document.write(
+"1. The first string is '"+s+"' and the second string is '"+t+"'<br><br>"
++ "2. Length of "+s+": "+s.length + " and "
++ "3. Length of "+t+": "+t.length +"<br><br>"
++ "4. Sub-String of '"+s+"' using substr: "+s.substr(4,9) +"<br><br>"
++ "5. Concatenate '"+s+"' and '"+t+"': "+s.concat(" ",t)+"<br><br>"
++ "6. Replace using replace functon: "+s.replace("Java","Hyper")+"<br><br>"
++ "7. Uppercasing '"+s+"': "+s.toUpperCase()+"<br><br>"
++ "8. Lowercasing '"+t+"': "+t.toLowerCase()+"<br><br>"
++ "9. Index of 'Scr' in '"+s+"': "+s.indexOf("Scr")+"<br><br>"
++ "10. Last index of 'Scr' in '"+s+"': "+s.lastIndexOf("Scr")+"<br><br>"
++ "11. Character at position 9 of '"+t+"': "+t.charAt(9)+"<br><hr><br>"
+
+);
+
+document.write(
+"Square root of "+x+"= "+Math.sqrt(x)+"<br><br>"
++ "Cube of "+x+"= "+Math.pow(x,3)+"<br><br>"
++ "Absolute Value of "+x+"= "+Math.abs(x)+"<br><br>"
++ "Round "+x+"= "+Math.round(x)+"<br><br>"
++ "Ceil value of "+x+"= "+Math.ceil(x)+"<br><br>"
++ "Floor value of "+x+"= "+Math.floor(x)+"<br><br>"
++ "Value of PI= " +Math.PI+"<br><br>"
++ "Max value of 10,34,87= " +Math.max(10,34,87)+"<br><br>"
++ "Min value of 10,34,87= " +Math.min(10,34,87)+"<br><br>"
+
+);
+}
+</script>
+</body>
+</html>
