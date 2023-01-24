@@ -1,0 +1,92 @@
+<html>
+<head><title>Online exam</title></head>
+    <style>
+   
+
+    </style>
+<body>
+    <center>
+    <div class="card">
+        <h1>Online Examination 2023</h1>
+<h4>Your Register Number : <span style="color:red;" id="reg"></span></h4>
+    <form name="examination" onsubmit="return exam()" method="get">
+        <p>1)  Which of the following tag is used for inserting the largest heading in HTML?</p>
+            <div class="r">
+              <input type="radio" class="radio" name="one" value="h4" id="e" />
+              <label for="e">H4</label>
+
+              <input type="radio" class="radio" name="one" value="h1" id="a" />
+              <label for="a">H1</label>
+
+              <input type="radio" class="radio" name="one" value="h3" id="c" />
+              <label for="c">H3</label>
+
+              <input type="radio" class="radio" name="one" value="h2" id="b" />
+              <label for="b">H2</label>
+            </div>
+<br><hr>
+            <p>2) What tag is used to render an image on a webpage?</p>
+            <div class="r">
+              <input type="radio" class="radio" name="two" value="img" id="f" />
+              <label for="f">img tag</label>
+
+              <input type="radio" class="radio" name="two" value="src" id="g" />
+              <label for="g">src</label>
+
+              <input type="radio" class="radio" name="two" value="image" id="h" />
+              <label for="h">image</label>
+
+              <input type="radio" class="radio" name="two" value="none" id="i" />
+              <label for="i">None of the above </label>
+            </div>
+<br><hr>
+            <p>3) Which of the following tag is used to insert a line-break in HTML?</p>
+            <div class="r">
+              <input type="radio" class="radio" name="three" value="br" id="k" />
+              <label for="k">br tag</label>
+
+              <input type="radio" class="radio" name="three" value="a" id="l" />
+              <label for="l">a tag</label>
+
+              <input type="radio" class="radio" name="three" value="pre" id="m" />
+              <label for="m">pre tag </label>
+
+              <input type="radio" class="radio" name="three" value="none" id="n" />
+              <label for="n">None of the above </label>
+            </div>
+            <br><br>
+            <div class="cc">
+            <button type="submit" value="submit">Submit</button>
+            <button type="submit" value="reset">Reset</button>
+        </div>
+
+    </form>
+
+    </div>
+</center>
+<script>
+    let a = prompt("Enter Your Register Number");
+    if (a==''){
+        document.write("Please enter register number");
+        location.reload();
+    }
+    document.getElementById('reg').innerHTML = a;
+
+function exam(){
+var m=0;
+if(document.examination.one.value=="h1")
+m=m+1;
+if(document.examination.two.value=="img")
+m=m+1;
+if(document.examination.three.value=="br")
+m=m+1;
+if(m==3){
+    alert("Wow, You got "+m+" out of 3 \n thank you for taking the online exam !!");
+} else{
+    alert("You got "+m+" out of 3 \n thank you for taking the online exam !!");
+}
+
+}
+
+</script>
+</script>
